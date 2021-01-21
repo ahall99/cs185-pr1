@@ -1,0 +1,109 @@
+body {
+	font-family: Sans-Serif;
+	box-sizing: border-box; 
+	margin: 15px;
+}
+
+/* Main content box with limited width */
+.content {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+/* Navbar implemented as unordered list */
+/* Restyle ul to contain a row of block elements floated left */
+.navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #f5f5f5;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.navbar li {
+	float: left;
+}
+
+.navbar a {
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+	border-right: 1px solid #ddd;
+	color: #000;
+}
+
+/* Alter style of active and hovered links */
+.navbar a:not(.active):hover {
+	background-color: #ddd;
+}
+
+.navbar a.active {
+	cursor: default;
+	color: #fff;
+	background-color: #3388ff;
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 1.3em;
+	margin: 16px 0px;
+}
+
+/* Somewhat responsive 2-column image format */
+.gallery {
+	margin-right: -15px;
+	overflow: hidden;
+}
+
+.gallery .column {
+	float: left;
+	width: 50%;
+	min-width: 300px;
+	margin-right: 0px;
+}
+
+.gallery img {
+	box-sizing: border-box;
+	width: 100%;
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
+
+/* Somewhat responsie video format */
+.videos {
+	overflow:hidden;
+	margin-right: -15px
+}
+
+.videos .youtube-embed {
+	box-sizing: border-box;
+	float:left;
+	padding-bottom: 15px;
+	padding-right: 15px;
+	min-width: 400px;
+	height: 200px;
+	width: 50%;
+}
+
+video {
+	width: 100%;
+	max-width: 500px;
+}
+
+/* Simple table formatting */
+table {
+	border-collapse: collapse;
+	border: 1px solid #bbb;
+	width: 100%;
+}
+
+th, td {
+	text-align: left;
+	border: 1px solid #bbb;
+	padding: 8px;
+}
+
+th {
+	background-color: #f5f5f5;
+}

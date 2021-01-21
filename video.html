@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Video Webpage</title>
+</head>
+<body>
+<div class="content">
+
+	<ul class="navbar">
+		<li><a href="index.html" title="Text Webpage">Text</a></li>
+		<li><a href="image.html" title="Image Webpage">Image</a></li>
+		<li><a class="active" title="Video Wepbage">Video</a></li>
+		<li><a href="table.html" title="Table Webpage">Table</a></li>
+	</ul>
+	
+	<h2>Resource Videos</h2>
+	<p>These are videos that greatly helped kick-start my computer graphics journey.</p>
+	
+	<!-- I couldn't figure out a good way to retain the aspect ratio as the iframes get resized so this doesn't look very good :( -->
+	<div class="videos">
+		<iframe class="youtube-embed" src="https://www.youtube.com/embed/Cp5WWtMoeKg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe class="youtube-embed" src="https://www.youtube.com/embed/svLzmFuSBhk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	
+	<h2>Look At This Photograph</h2>
+	<p>This is probably the most useful project I will ever do.</p>
+	<video autoplay controls loop muted title="Continuous Nickelback Spiral">
+		<source src="img/NickelStack.mp4" type="video/mp4">
+	</video>
+	
+</div>
+</body>
+</html>
