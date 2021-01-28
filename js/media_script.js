@@ -24,10 +24,11 @@ for (var i = 0; i < imgs.length - 1; i++) {
 // Add click listeners to videos (like above)
 for (var i = 0; i < videos.length - 1; i++) {
 	videos[i].onclick = function() {
+		event.preventDefault();
 		overlayMedia.src = this.src;
 		overlayMedia.title = this.title;
-		this.load();
-		this.play();
+		overlayMedia.load();
+		overlayMedia.play();
 		enableOverlay();
 	}
 }
