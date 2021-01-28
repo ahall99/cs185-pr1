@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Image Webpage</title>
 </head>
@@ -12,24 +12,40 @@
 	<ul class="navbar">
 		<li><a href="index.html" title="Text Webpage">Text</a></li>
 		<li><a class="active" title="Image Webpage">Image</a></li>
-		<li><a href="video.html" title="Video Wepbage">Video</a></li>
+		<li><a href="video.html" title="Video Webpage">Video</a></li>
 		<li><a href="table.html" title="Table Webpage">Table</a></li>
+		<li><a href="form.html" title="Form Webpage">Form</a></li>
 	</ul>
 	
 	<h2>Shader Gallery</h2>
-	<p>These are still images of some of my unpublished or modified shaders.</p>
+	<p>These are still images of some of my unpublished or modified shaders. Duplicates are also included to demonstrate the responsiveness / scroll to top button.</p>
 	<div class="gallery">
-		<div class="column">
+	
 			<img src="img/DNA.png" title="Recursive DNA Spiral">
 			<img src="img/Mandelzoink.jpg" title="Mandelbrot Heightmap Zoom">
 			<img src="img/InverseMandelbrot.jpg" title="Inverse Julia Set">
-		</div>
-		<div class="column">
 			<img src="img/julia3.png" title="3-Julia Set">
 			<img src="img/kaleidoscoob.png" title="Kaleidoscope Tube Simulation">
-		</div>
+			<img src="img/DNA.png" title="Recursive DNA Spiral">
+			<img src="img/Mandelzoink.jpg" title="Mandelbrot Heightmap Zoom">
+			<img src="img/InverseMandelbrot.jpg" title="Inverse Julia Set">
+			<img src="img/julia3.png" title="3-Julia Set">
+			<img src="img/kaleidoscoob.png" title="Kaleidoscope Tube Simulation">
+			<img src="img/DNA.png" title="Recursive DNA Spiral">
+			<img src="img/Mandelzoink.jpg" title="Mandelbrot Heightmap Zoom">
+			<img src="img/InverseMandelbrot.jpg" title="Inverse Julia Set">
+			<img src="img/julia3.png" title="3-Julia Set">
+			<img src="img/kaleidoscoob.png" title="Kaleidoscope Tube Simulation">
+			
 	</div>
 	
+	<div id="overlay" class="invisible">
+		<img id="overlay-media" src="img/julia3.png">
+	</div>
+	
+	<button id="scroll" type="button">Scroll to top</button>
+	
 </div>
+<script src="js/media_script.js"></script>
 </body>
 </html>

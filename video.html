@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Video Webpage</title>
 </head>
@@ -12,25 +12,31 @@
 	<ul class="navbar">
 		<li><a href="index.html" title="Text Webpage">Text</a></li>
 		<li><a href="image.html" title="Image Webpage">Image</a></li>
-		<li><a class="active" title="Video Wepbage">Video</a></li>
+		<li><a class="active" title="Video Webpage">Video</a></li>
 		<li><a href="table.html" title="Table Webpage">Table</a></li>
+		<li><a href="form.html" title="Form Webpage">Form</a></li>
 	</ul>
 	
-	<h2>Resource Videos</h2>
-	<p>These are videos that greatly helped kick-start my computer graphics journey.</p>
+	<h2>Shader Videos</h2>
+	<p>These are videos of unpublished shaders. While the same two are duplicated to demonstrate responsiveness, by checking the JS you can see that the overlay is not hardcoded for these two particular videos.</p>
 	
-	<!-- I couldn't figure out a good way to retain the aspect ratio as the iframes get resized so this doesn't look very good :( -->
-	<div class="videos">
-		<iframe class="youtube-embed" src="https://www.youtube.com/embed/Cp5WWtMoeKg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		<iframe class="youtube-embed" src="https://www.youtube.com/embed/svLzmFuSBhk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<!-- Gotta autoplay all of them obviously -->
+	<div class="gallery">
+		<video autoplay loop muted src="img/NickelStack.mp4" title="Continuous Nickelback Spiral"></video>
+		<video autoplay loop muted src="img/sierpinscoob.mp4" title="Sierpinscoob"></video>
+		<video autoplay loop muted src="img/NickelStack.mp4" title="Continuous Nickelback Spiral"></video>
+		<video autoplay loop muted src="img/sierpinscoob.mp4" title="Sierpinscoob"></video>
+		<video autoplay loop muted src="img/NickelStack.mp4" title="Continuous Nickelback Spiral"></video>
+		<video autoplay loop muted src="img/sierpinscoob.mp4" title="Sierpinscoob"></video>
 	</div>
 	
-	<h2>Look At This Photograph</h2>
-	<p>This is probably the most useful project I will ever do.</p>
-	<video autoplay controls loop muted title="Continuous Nickelback Spiral">
-		<source src="img/NickelStack.mp4" type="video/mp4">
-	</video>
+	<div id="overlay" class="invisible">
+		<video id="overlay-media" autoplay controls loop muted title="Continuous Nickelback Spiral">
+			<source src="img/NickelStack.mp4" type="video/mp4">
+		</video>
+	</div>
 	
 </div>
+<script src="js/media_script.js"></script>
 </body>
 </html>

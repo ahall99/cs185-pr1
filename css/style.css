@@ -1,0 +1,154 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Sans-Serif;
+	box-sizing: border-box; 
+	margin: 15px;
+}
+
+/* Main content box with limited width */
+.content {
+	margin: 0 auto;
+	/*max-width: 1000px;*/
+	min-width: 350px; /* Hard coded slightly above min width of the navbar */
+}
+
+/* Navbar implemented as unordered list */
+/* Restyle ul to contain a row of block elements floated left */
+.navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #f5f5f5;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.navbar li {
+	float: left;
+}
+
+.navbar a {
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+	border-right: 1px solid #ddd;
+	color: #000;
+}
+
+/* Alter style of hovered, clicked, active links */
+.navbar a:not(.active):hover {
+	background-color: #ddd;
+}
+
+.navbar a:not(.active):active {
+	background-color: #aaa;
+	border-color: #aaa;
+}
+
+.navbar a.active {
+	cursor: default;
+	color: #fff;
+	background-color: #3388ff;
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 1.3em;
+	margin: 15px 0px;
+}
+
+/* Style scroll to top button like navbar links */
+#scroll {
+	position: sticky;
+	position: -webkit-sticky;
+	bottom: 15px;
+	
+	padding: 8px;
+	background-color: #f5f5f5;
+	border-radius: 3px;
+	border: 1px solid #ddd;
+}
+
+#scroll:hover {
+	background-color: #ddd;
+}
+
+#scroll:active {
+	background-color: #aaa;
+	border-color: #aaa;
+}
+
+/* Image/video responsive gallery */
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 -8px;
+}
+
+.gallery img, .gallery video {
+	/*height: 150px;*/
+	width: 330px;
+	margin: 8px;
+	flex: 1 1 auto;
+}
+
+/* Overlay and its media */
+#overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+#overlay > * {
+	width: 100%;
+	max-width: 80%;
+	max-height: 80%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+/* Simple table formatting */
+table {
+	border-collapse: collapse;
+	border: 1px solid #bbb;
+	width: 100%;
+}
+
+th, td {
+	text-align: left;
+	border: 1px solid #bbb;
+	padding: 8px;
+}
+
+th {
+	background-color: #f5f5f5;
+}
+
+/* Form */
+.text-input > * {
+	display: block;
+}
+
+.text-input input, form p, .radio-group {
+	margin: 0 0 8px 0;
+}
+
+.radio-option input {
+	margin-left: 0;
+}
+
+.invisible {
+	display: none !important;
+}
